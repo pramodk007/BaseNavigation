@@ -74,12 +74,14 @@ abstract class BaseNavigationComponent<VB : ViewDataBinding>(
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setDisplayShowHomeEnabled(true)
     }
-    fun showToolbar(){
-        supportActionBar?.show()
+    fun showToolbar(toggle:Boolean){
+        if(toggle){
+            supportActionBar?.show()
+        }else{
+            supportActionBar?.hide()
+        }
     }
-    fun hideToolbar(){
-        supportActionBar?.hide()
-    }
+
 
 }
 

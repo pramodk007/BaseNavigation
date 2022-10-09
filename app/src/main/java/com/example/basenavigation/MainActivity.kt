@@ -31,6 +31,7 @@ class MainActivity : BaseNavigationComponent<ActivityMainBinding>(ActivityMainBi
                 }
                 R.id.movieDetailsFragment -> {
                     hideBottomNav()
+                    showToolbar(false)
                     showBackArrow()
                 }
             }
